@@ -1,3 +1,7 @@
 ﻿  Game.cpp
-Game.obj : error LNK2019: unresolved external symbol "protected: void __cdecl Game::launchCodes(void)" (?launchCodes@Game@@IEAAXXZ) referenced in function "public: void __cdecl Game::run(void)" (?run@Game@@QEAAXXZ)
-C:\Users\Public\Documents\visual studio 2015\Projects\MissileGame\GameplayProgrammingI\x64\Debug\MissileGame.exe : fatal error LNK1120: 1 unresolved externals
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+  MissileGame.vcxproj -> C:\Users\keena\Documents\GitHub\GameplayProgrammingI\x64\Debug\MissileGame.exe
+  MissileGame.vcxproj -> C:\Users\keena\Documents\GitHub\GameplayProgrammingI\x64\Debug\MissileGame.pdb (Partial PDB)

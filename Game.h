@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
-#include <cstdlib>
+#include <string>
+#include <Windows.h>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 /// <summary>
 /// @Author K.M.
 /// </summary>
@@ -25,8 +28,7 @@ protected:
 		float y;
 		void print()
 		{
-			std::cout << "("<< x <<" , "<< y << ")"<< std::endl;
-			system("pause");
+			std::cout << "   ("<< x <<" , "<< y << ")"<< std::endl;
 		}
 	}Coordinates;
 
