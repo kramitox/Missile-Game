@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <cstdlib>
 /// <summary>
 /// @Author K.M.
 /// </summary>
@@ -11,21 +12,29 @@ public:
 protected:
 	void update();
 	void selectWarhead();
+	void acquireTarget();
+	void launchCodes();
 
 	enum Warhead { EXPLOSIVE, NUCLEAR };
-
+	Warhead payload;
+	
 
 	typedef struct Position
 	{
-		int x;
-		int y;
+		float x;
+		float y;
 		void print()
 		{
-			std::cout << x << y << std::endl;
+			std::cout << "("<< x <<" , "<< y << ")"<< std::endl;
+			system("pause");
 		}
 	}Coordinates;
 
 	typedef struct Enemy {
 		Coordinates coordinates;
 	}Target;
+
+
+	Coordinates coordinates;
+	Target target;
 };

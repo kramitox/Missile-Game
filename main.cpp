@@ -11,9 +11,6 @@
 int main(int, char* argv[])
 {
 	Game game;
-	while (true)
-	{
-		game.run();
-	}
+	game.run();
 	
 }
