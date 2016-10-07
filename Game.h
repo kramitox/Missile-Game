@@ -5,7 +5,11 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 /// <summary>
-/// @Author K.M.
+/// @Author: Keenan McEntee
+/// @date 05/10/2016
+/// @version 1.0
+/// @Description: Game header that is managing setting up the methods and structures before the Game.cpp defines them.
+///				  It also handles all our includes.
 /// </summary>
 class Game
 {
