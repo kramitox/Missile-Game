@@ -56,7 +56,7 @@ void Game::run()
 void Game::update()
 {
 	int count = 1;
-	for (; target.coordinates.x > 0 || target.coordinates.y; target.coordinates.x-- && target.coordinates.y-- && count++)
+	for (; target.coordinates.x < 0 || target.coordinates.y < 0; target.coordinates.x-- && target.coordinates.y-- && count++)
 	{
 		
 		Sleep(100);
@@ -88,7 +88,7 @@ void Game::selectWarhead()
 	while (!warheadSelected)
 	{
 		float decision = 0;
-		std::cout << "   Please choose a warhead: \n" << "  1) Explosive \n  2) Nuclear \n \n Please Enter number: ";
+		std::cout << "\n WELCOME TO MISSILE CONTROL ver2.78 \n \n   Please choose a warhead: \n" << "  1) Explosive \n  2) Nuclear \n \n Please Enter number: ";
 		std::cin >> decision;
 		std::cout << std::endl;
 		if (decision == 1)
@@ -117,20 +117,21 @@ void Game::acquireTarget()
 {
 	std::cout << "   Please enter the targets X coordinate: ";
 	std::cin >> target.coordinates.x;
-	std::cout << "   Please enter the targets Y coordinate: ";
-	std::cin >> target.coordinates.y;
-
-	std::cout << "\n ";
-	target.coordinates.print();
-	//This is just here because later we use a countdown to make the game look important.
 	if (target.coordinates.x < 0)
 	{
 		target.coordinates.x = target.coordinates.x * -1;
 	}
+	std::cout << "   Please enter the targets Y coordinate: ";
+	std::cin >> target.coordinates.y;
 	if (target.coordinates.y < 0)
 	{
 		target.coordinates.y = target.coordinates.y * -1;
 	}
+	std::cout << "\n ";
+	target.coordinates.print();
+	//This is just here because later we use a countdown to make the game look important.
+	
+	
 }
 /*
 //This part in the code was probably the most difficult. It pseudo-randomises each launchcode value and then outputs all 6 of them as a string.
